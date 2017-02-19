@@ -1,0 +1,80 @@
+<!doctype>
+<html>
+  <head>
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Example 1</a>
+      <a href="example_02.html">Example 2</a>
+      <a href="example_03.html">Example 3</a>
+      <a href="example_04.html">Example 4</a>
+      <a href="example_05.html">Example 5</a>
+      <a href="example_06.html">Example 6</a>
+    </nav>
+    <h1>Form Fields: Example 4</h1>
+
+    <form action method="example_04.html" method="get">
+
+    <select name="Simpsons">
+      <option value="homer">Homer</option>
+      <option value="marge">Marge</option>
+      <option value="bart" selected>Bart</option>
+      <option value="lisa">Lisa</option>
+    </select>
+
+    <select name="enemies">
+      <option>Frank Grimes</option>
+      <option>Jane Fonda</option>
+      <option>Jack Anderson</option>
+    </select>
+
+    <select name="blanks">
+      <option value="">Empty1</option>
+      <option value="">Empty2</option>
+      <option value="">Empty3</option>
+    </select>
+
+    <select multiple>
+      <option value="north">North</option>
+      <option value="south">South</option>
+      <option value="east">East</option>
+      <option value="west">West</option>
+    </select>
+
+    <select>
+  <optgroup label="Indoor Sports">
+    <label for= "indoors" ><option value="basketball">Basketball</option></label>
+    <label for= "indoors" ><option value="i_hockey">Indoor hockey</option></label>
+  </optgroup>
+  <optgroup label="Outdoor Sports">
+    <label for= "outdoors" ><option value="football">Football</option></label>
+    <label for= "outdoors" ><option value="baseball">Baseball</option></label>
+  </optgroup>
+</select>
+<button type="submit" name="button" value="ItDone">DOOS IT</button>
+</form>
+
+    <div class="query-params">
+      <h2>Query Params</h2>
+      <p>
+        This shows you all of the names and values that
+        have been sent to the server. (<a href="example_04.html">clear</a>)
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Field Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>

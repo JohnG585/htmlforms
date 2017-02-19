@@ -1,66 +1,63 @@
-<!DOCTYPE html>
+<!doctype>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>An Informative Lesson on Forms</title>
-    <link rel="stylesheet" href="style.css">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <h1>An Informative Lesson on Forms</h1>
-    <!-- Insert you and your partner's name between the spans -->
-    <h2>by: <span id="partner1"></span> and <span id="partner2"></span></h2>
-    <p>Welcome knowledge-seeker. You seem to have stumbled upon this <strong>informative lesson on web forms.</strong> Let's get into it.</p>
-    <h3>Wat is a <strong>web form</strong>?</h3>
-    <p>A <strong>web form</strong> are the main way of getting information from your user into your application. Sometimes this information goes to a server to be saved in a database. Sometimes it's stored just in the browser. Look. Here are some sites that use forms.</p>
-    <ul>
-      <li>
-        <a href="https://www.sporcle.com/games/GeoGod/allharrypotter">Harry Potter Top 200 Sporcle</a>
-      </li>
-      <!-- Add in two more sites that have forms -->
-      <li></li>
-      <li></li>
-    </ul>
-    <h3>Form Elements: Control Tags</h3>
-    <p><strong>Control tags</strong> are tags that build elements which a user can control to give information. There are four control tags:</p>
-    <ul>
-      <li>input</li>
-      <li>select</li>
-      <li>textarea</li>
-      <li>button</li>
-    </ul>
-    <h3>input</h3>
-    <p>The default and most common type of input element is the single-line text field. We specify this using the <strong>type</strong> attribute and set it to "text".</p>
-    <input type="text">
-    <!-- Find 4-6 other input types (not radio or checkboxes) and put them below with brief descriptions of what they do. -->
-    <p>Let's take a closer look at two specific input types: <strong>radio</strong> and <strong>checkboxes</strong>.</p>
-    <p><strong>Radio buttons</strong> are used when the user can only <strong>select one choice</strong> from many. Setting the input's value will allow you to access it using JavaScript, for example.
-    <!-- Find out how to adjust the name attribute so that only one radio button out of the three may be selected and add a sentence or two describing the rule. -->
-    </p>
-    <input type="radio" name="" value=""> Select me <br>
-    <input type="radio" name="" value=""> Not me <br>
-    <input type="radio" name="" value=""> Aaaand...not me <br>
-    <p><strong>Checkboxes</strong> are used when multiple choices can be selected.</p>
-    <!-- Below, create three checkboxes with different values, and add an attribute to one of them that makes it checked by default. Add a paragraph describing some rules you found when setting checkbox attributes. -->
-    <h3>select</h3>
-    <p>Select boxes allow the user to choose from a set of options.</p>
-    <!-- Create a select box with three options and have the third one be selected by default -->
-    <!-- Create a select box with three options and have the second and third one be selected by default -->
-    <h3>textarea</h3>
-    <p>Here's a textarea. You can drag the lower-right corner to adjust its height and width.</p>
-    <!-- Find out what other attributes you can control to set a default width and height. -->
-    <textarea></textarea>
-    <h3>button</h3>
-    There are three types of buttons:
-    <ul>
-      <li>button - good ol' button.<br>
-        <button type="button">Just a butt...on</button>
-      </li>
-      <li>submit <!-- Describe the point of a submit button when nested in a form and include an example -->
+    <nav>
+      <a href="index.html">Example 1</a>
+      <a href="example_02.html">Example 2</a>
+      <a href="example_03.html">Example 3</a>
+      <a href="example_04.html">Example 4</a>
+      <a href="example_05.html">Example 5</a>
+      <a href="example_06.html">Example 6</a>
+    </nav>
+    <h1>Form Fields: Example 1</h1>
 
-      </li>
-      <li>reset <!-- Describe the point of a reset button when nested in a form and include an example -->
+    <form action="" method="get">
+      <input type="radio" name="cities" value="denver">Denver
+      <input type="radio" name="cities">New York
+      <br><br>
+      <textarea name="exampleInput" id="text1" cols="30" rows="10">Enter Text Here!</textarea>
+      <br><br>
+      <textarea name="exampleInput" id="text2" cols="30" rows="10"></textarea>
+      <br> <br>
+      Enter email here: <input type="email" name='email' placeholder="example@domain.com">
+      <br><br>
+      Please enter today's date: <input type="date" name="date">
+      <br><br>
+      <input type="number" min="1" max="100">
+      <br><br>
+      <input type="file" name="exampleFile">
+      <br><br>
+      <label for="exampleInput">
+    </form>
+    <form>
+      <input type="text" name="firstname" placeholder="First Name"><br>
+      <input type="text" name="lastname" placeholder="Last Name"><br>
+      <input type="submit" value="I'm done!">
+    </form>
 
-      </li>
-    </ul>
+    <div class="query-params">
+      <h2>Query Params</h2>
+      <p>
+        This shows you all of the names and values that
+        have been sent to the server. (<a href="index.html">clear</a>)
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Field Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
   </body>
 </html>
